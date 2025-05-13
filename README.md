@@ -21,5 +21,9 @@ By sharing this repo, I hope it can serve as a learning aid for those who want t
 Just copy the code from this repository into your preferred IDE or development environment.
 Upload it to your microcontroller and observe how the counter works with both LCD and 7-segment display
 
+
 # Credit
 Special thanks to Mr. Hanafiah, my lecturer, who provided the header file and guidance for this project.
+
+# Dont Forget!
+To read TODO
