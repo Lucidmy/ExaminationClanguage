@@ -40,7 +40,7 @@ void setup()
     TRISD = 0b00000000;
     TRISE = 0b00000000;
     lcd_init();     //To calling LCD
-    BUZZER=1;       /* Kenapa BUZZER disetkan 1(HIGH) kerana buzzer dalam litar
+    BUZZER=0;       /* Kenapa BUZZER disetkan 1(HIGH) kerana buzzer dalam litar
                      * kerana BUZZER dalam litar ini disetkan kepada Active low
                      * logic
                      */
