@@ -14,7 +14,7 @@
  */
 
 //write define here!
-#define SEGMENT PORTD
+#define SEGMENT PORTE
 #define HD44780     //IC LCD yang digunakan
 #define ETN804
 
@@ -48,13 +48,13 @@ void setup()
 
 void loop()
 {
-    int counter = 0; //default state counter adalah 0
+    int counter = 9; //default state counter adalah 0
 
     while(1)
     {
 
         lcd_goto(0,0);  //setkan lcd punya (pos,row)
-        lcd_number(counter, DEC, 1);
+        lcd_number(counter, DEC, 4);
         lcd_string(" ");
         /* LCD akan display Counter mengikut nombor
          * decimal dengan 1 digit
@@ -68,7 +68,7 @@ void loop()
         if(RA0 == 0)
         {
             __delay_ms(20); //DEBOUNCE
-            if(RA0 == 0)
+            if(RA4 == 0)
             {
                 while(counter < 9)
                 {
@@ -86,7 +86,7 @@ void loop()
         }
 
         //RESET
-        if(RA1 == 0)
+        if(RA5 == 0)
         {
             __delay_ms(20);
             if(RA1 == 0)
