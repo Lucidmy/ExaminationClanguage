@@ -65,7 +65,7 @@ void loop()
          */
 
         // Auto counter UP
-        if(RA0 == 0)
+        if(RA4 == 0)
         {
             __delay_ms(20); //DEBOUNCE
             if(RA4 == 0)
@@ -80,7 +80,7 @@ void loop()
                     __delay_ms(1000);
                 }
 
-                while(RA0 == 0);
+                while(RA4 == 0);
                 __delay_ms(20);
             }
         }
@@ -89,11 +89,11 @@ void loop()
         if(RA5 == 0)
         {
             __delay_ms(20);
-            if(RA1 == 0)
+            if(RA5 == 0)
             {
                 counter = 0;
 
-                while(RA1 == 0);
+                while(RA5 == 0);
                 __delay_ms(20);
             }
         }
